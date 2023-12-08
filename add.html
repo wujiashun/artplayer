@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加播放器</title>
+	 <script type="text/javascript" src="https://blog.yuchenya.com/mayiui/mayiui.js"></script>
+     <link rel="stylesheet" href="https://blog.yuchenya.com/mayiui/mayiui.css">
+	 <link href="https://cdn.cbd.int/yuchenlayui@2.9.0/dist/css/layui.css" rel="stylesheet">
+	 <script src="https://cdn.cbd.int/yuchenlayui@2.9.0/dist/layui.js"></script>
+	</head>
+	<body>
+<div class="layui-form">
+  <input type="text"  id="url" placeholder="播放url" class="layui-input">
+  <input type="text"  id="poster" placeholder="海报图片地址" class="layui-input">
+			</div>
+ <button type="button" id="out" class="layui-btn layui-btn-warm layui-btn-radius">播放视频</button>
+				<script>
+				// 获取按钮元素
+var button = document.getElementById("out");
+
+// 添加点击事件监听器
+button.addEventListener("click", function() {
+  // 在此处执行页面跳转逻辑
+  //获取链接
+			var url = document.getElementById("url");
+			var poster = document.getElementById("poster");
+			var url = url.value;
+			var poster = poster.value;
+			//跳转
+if (!url || !poster) {
+  alert("还是为空，你真反骨哇！");
+}else{
+	//获取URL
+	var hostname = window.location.hostname;
+console.log(hostname); 
+	var link = "https://yuplayer.yuchenya.com"+ "?url="+ url + "&poster=" + poster;
+window.open(link);
+}
+  
+
+});
+
+
+				</script>
+		</body>
+</html>

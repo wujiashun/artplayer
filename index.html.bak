@@ -245,6 +245,7 @@ icons: {
     art.fullscreenWeb = true;
 	//加载图片
  })
+ }
 		</script>
 	</body>
 </html>

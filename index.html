@@ -28,15 +28,12 @@
     }
 function checkAndAlert(variable) {
   // 判断变量是否为空（null、undefined、空字符串）
-  if (!variable) {
-    // 弹出消息框
-    alert("必要参数为空：url，poster");
-    // 停止代码执行
-    return;
-  }
+ if (!variable1 || !variable2) {
+  alert("某些变量为空！");
+  return; // 停止执行后续的代码
+}
   // 如果变量不为空，继续执行其他代码
   console.log("变量不为空，继续执行其他代码。");
-}
   console.log(getParameters().url);
   console.log(getParameters().poster);
 checkAndAlert(getParameters().url);

@@ -234,10 +234,6 @@
     ],
     
 	*/
-	//网页全屏
-	art.on('ready', () => {
-    art.fullscreenWeb = true;
-});
 	//加载图片
 	icons: {
         state: '<img width="150" heigth="150" src="/img/state.svg">',

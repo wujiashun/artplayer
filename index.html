@@ -26,9 +26,8 @@
         }
         return obj;
     }
-function checkAndAlert(variable) {
   // 判断变量是否为空（null、undefined、空字符串）
- if (!variable1 || !variable2) {
+ if (!getParameters().url || !getParameters().poster) {
   alert("某些变量为空！");
   return; // 停止执行后续的代码
 }
@@ -36,8 +35,6 @@ function checkAndAlert(variable) {
   console.log("变量不为空，继续执行其他代码。");
   console.log(getParameters().url);
   console.log(getParameters().poster);
-checkAndAlert(getParameters().url);
-checkAndAlert(getParameters().poster);
 			//调用开始
     var art = new Artplayer({
     container: '.video',

@@ -37,15 +37,15 @@ function checkAndAlert(variable) {
   // 如果变量不为空，继续执行其他代码
   console.log("变量不为空，继续执行其他代码。");
 }
-  console.log(obj.url);
-  console.log(obj.poster);
-checkAndAlert(obj.url);
-checkAndAlert(obj.poster);
+  console.log(getParameters().url);
+  console.log(getParameters().poster);
+checkAndAlert(getParameters().url);
+checkAndAlert(getParameters().poster);
 			//调用开始
     var art = new Artplayer({
     container: '.video',
-    url: obj.url,
-    poster: obj.poster,
+    url: getParameters().url,
+    poster: getParameters().poster,
     volume: 0.5,//默认音量
     isLive: false,//是否直播，隐藏进度条 
     muted: false,//是否默认静音

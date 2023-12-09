@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>yuplayer</title>
-	 <script type="text/javascript" src="https://blog.yuchenya.com/mayiui/mayiui.js"></script>
-     <link rel="stylesheet" href="https://blog.yuchenya.com/mayiui/mayiui.css">
+	 <script type="text/javascript" src="/mayiui/mayiui.js"></script>
+     <link rel="stylesheet" href="/mayiui/mayiui.css">
 
 	<script src="https://cdn.cbd.int/yuchenartplayer@5.0.9/dist/artplayer.js"></script>
 	</head>

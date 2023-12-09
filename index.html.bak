@@ -11,6 +11,7 @@
 	<body>
 		<div class="video" style="position: fixed; top: 0; left: 0; width:100%; height:100vh;">播放器加载中......</div>
 		<script>
+
 //加载
  mayiui.loading({
   content:'视频加载中...'  
@@ -247,9 +248,20 @@ icons: {
 });  
 	//网页全屏
 	art.on('ready', () => {
+		
 	mayiui.close('loading-all');//关闭加载
     art.fullscreenWeb = true;
 	//加载图片
+ var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+ if (isMobile) {
+  console.log("当前设备为移动端");
+mayiui.msg('移动端双击视频全屏',{
+  ico:'check',
+  icoBgColor:'#a82929'  
+});
+} else {
+  console.log("当前设备不是移动端");
+  }
  })
  }
 		</script>

@@ -7,6 +7,8 @@
      <link rel="stylesheet" href="/mayiui/mayiui.css">
 	<script src="https://cdn.cbd.int/yuchenartplayer@5.0.9/dist/artplayer.js"></script>
 	<script>
+//通过dom获得元素
+        window.onload = 
 //加载
  mayiui.loading({
   content:'视频加载中...'  
@@ -54,7 +56,7 @@
     muted: false,//是否默认静音
     autoplay: false,//自动播放
     pip: false,//是否在底部控制栏里显示 画中画 的开关按钮
-    autoSize: true,//播放器的尺寸默认会填充整个 container 容器尺寸，所以经常出现黑边，该值能自动调整播放器尺寸以隐藏黑边，类似 css 的 object-fit: cover;
+    autoSize: true,//播放器的尺寸默认会填充整个 container 容器尺寸，所以经常出现黑边，该值能自动调整播放器尺寸以隐藏黑边，类似 css object-fit: cover
     autoMini: false,//当播放器滚动到浏览器视口以外时，自动进入 迷你播放 模式
     screenshot: true,//截图
     setting: false,//设置
@@ -246,7 +248,8 @@ icons: {
     art.fullscreenWeb = true;
  })
  }
-		</script>
+ }
+	</script>
 	</head>
 	<body>
 		<div class="video" style="position: fixed; top: 0; left: 0; width:100%; height:100vh;">播放器加载中......</div>	
